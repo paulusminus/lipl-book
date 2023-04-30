@@ -6,6 +6,6 @@ The gatt peripheral part defines a Gatt service with three characeristics that a
 
 Text is used to get the part of the lyrics that needs to be shown.
 
-Status is used to get a the text for the statusbar that is shown on the bottom of the screen, typically the title, the current part and the total parts of het lyric being displayed.
+Status is used to get the text for the statusbar that is shown on the bottom of the screen, typically the title, the current part and the total parts of het lyric being displayed.
 
 Control is used to select a theme, black letters on a white screen or white letters on a black screen, or to increase or decrease the fontsize.
