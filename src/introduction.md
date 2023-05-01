@@ -18,3 +18,11 @@ One of the goals is to minimize energy consumption so you can power the raspberr
 
 The third component was first written in kotlin and runs on an Android phone. Later on I rewrote it in flutter.
 The application can synchronize data with the first component. Bluetooth is used to send the lyrics that needs to be displayed to the display-server.
+
+## Sing-along
+
+The sing-alongs are not at home. When I go to a sing-along I bring with me my smartphone with lipl-control installed and data synchronized and a raspberry Pi Zero W with lipl-display installed. The lipl-repo-rest is not used on location so I'm not dependent on a Internet Connection.
+
+The Raspberry Pi Zero gets connected to a display with the help of its HDMI connector. After booting the Pi advertises a Gatt Service.
+
+Lipl-control can listen for advertisements and connect to the Pi. When I choose Play on lipl-control the parts and status are written to Gatt Characteristics on lipl-display. Lipl control can also write to a characteric that controls font size and theme.
