@@ -1,6 +1,6 @@
 # Lipl Display
 
-The application is using the primary UI thread for the UI. A second thread is started that starts a Gatt peripheral that passes messages received to the UI thread.
+The application is using the primary UI thread for the UI. A second thread is started that starts a Gatt peripheral that handles characteristic writes, converts them to messages and passes them to the UI thread.
 
 The gatt peripheral part defines a Gatt service with three characeristics that are writeable, namely text, status and control.
 

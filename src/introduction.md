@@ -1,8 +1,8 @@
 # Introduction
 
-I found that remembering that remembering melodies is easier than words.
+I found that remembering melodies is easier than words.
 
-When I was organizing sing-alongs with some friends I thought is was usefull to display lyrics on a screen instead of working with printed material. So I wrote applications that assisted in storing and updating lyrics and playlists, selecting a lyric to be displayed. Together they are caled Lipl. It is a sort of abbreviation of **L**yr**i**c **Pl**ay.
+When I was organizing sing-alongs with some friends I thought is was useful to display lyrics on a screen instead of working with printed material. So I wrote applications that assisted in storing and updating lyrics and playlists, selecting a lyric to be displayed. Together they are caled Lipl. It is a sort of abbreviation of **L**yr**i**c **Pl**ay.
 
 The system has three components
 
