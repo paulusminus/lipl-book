@@ -11,3 +11,5 @@ Status is used to get the text for the statusbar that is shown on the bottom of 
 Control is used to select a theme, black letters on a white screen or white letters on a black screen, or to increase or decrease the fontsize.
 
 Future plan is to use a custom yocto distribution instead of raspbian. With a custom yocto distribution I hope to minimize boot time and energy consumption.
+
+[The source code for the Flutter version](https://www.github.com/paulusminus/lipl-display-flutter) can be found on Github.

@@ -8,4 +8,4 @@ The handling of the request is using [warp](https://crates.io/crates/warp) or [a
 
 The rest api is documented in a swagger.json file.
 
-[Source code](https://www.github.com/paulusminus/lipl-repo-rest) can be found on Github.
+[The Source code of Lipl Repo Rest](https://www.github.com/paulusminus/lipl-repo-rest) can be found on Github.
