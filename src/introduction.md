@@ -22,7 +22,7 @@ The application can synchronize data with the first component. Bluetooth is used
 ## Sing-along
 
 The sing-alongs are not at home. When I go to a sing-along I bring with me
-- my smartphone with lipl-control installed and data synchronized with lipl-repo-rest
+- my smartphone with lipl-control installed and data synchronized with lipl-storage
 - a raspberry Pi Zero W with lipl-display installed
 
 The Raspberry Pi Zero gets connected to a display with the help of its HDMI connector. After booting the Pi advertises a Gatt Service.
