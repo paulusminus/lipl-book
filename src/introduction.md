@@ -6,7 +6,7 @@ When I was organizing sing-alongs with some friends I thought is was useful to d
 
 Lipl consist of three applications
 
-1. An appliation for storing the lyrics and playlists, called [lipl-repo-rest](./lipl-repo-rest.md), accessible through a REST interface.
+1. An appliation for storing the lyrics and playlists, called [lipl-storage](./lipl-storage.md), accessible through a REST interface.
 2. An application for displaying part of a lyric on a screen, called [lipl-display](./lipl-display.md).
 3. An application for maintaining the collection of lyrics and playlists, and selecting a lyric or playlist that should be displayed on a screen, called [lipl-control](./lipl-control.md).
 
