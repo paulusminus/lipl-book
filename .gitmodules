@@ -1,3 +1,0 @@
-[submodule "v0.4.35"]
-	path = crates/mdbook
-	url = https://github.com/rust-lang/mdBook.git
