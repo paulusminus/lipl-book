@@ -9,3 +9,4 @@ title = "Lipl"
 mathjax-support = true
 
 [output.epub]
+optional = true
