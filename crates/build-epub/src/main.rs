@@ -1,5 +1,5 @@
-use log::{debug, info, error};
-use mdbook::{errors::Error, renderer::RenderContext};
+use log::{info, error};
+use mdbook::errors::Error;
 
 /// Change to workspace root.
 ///
@@ -14,19 +14,19 @@ fn main() -> Result<(), Error> {
     cwd_to_workspace_root()?;
     env_logger::init();
 
-    let md = mdbook::MDBook::load(".")?;
-    let destination = md.build_dir_for("epub");
-
-    debug!("Epub book destination = {:#?}", destination.display());
-    debug!("Epub book config = {:#?}", md.config);
-
-    let context = RenderContext::new(md.root, md.book, md.config, destination);
-    match mdbook_epub::generate(&context) {
-        Ok(_) => {
-            info!("Epub generated in directory {}", context.destination.display());
+    match serde_json::from_reader(std::io::stdin()).map_err(|_| mdbook_epub::Error::RenderContext) {
+        Ok(context) => {
+            match mdbook_epub::generate(&context) {
+                Ok(_) => {
+                    info!("Epub generated in directory {}", context.destination.display());
+                }
+                Err(error) => {
+                    error!("Failed to generated epub {}", error);
+                }
+            }        
         }
         Err(error) => {
-            error!("Failed to generated epub {}", error);
+            error!("Failed to get context from stdin {}", error);
         }
     }
     Ok(())
