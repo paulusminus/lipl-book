@@ -28,10 +28,10 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v3
-      - name: Find out if cargo is found
-        run: which cargo
-      - name: Build with mdBook
+      - name: Build html with mdBook
         run: cargo build-book
+      - name: Build epub with mdBook
+        run: cargo build-epub
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:

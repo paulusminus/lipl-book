@@ -4,3 +4,8 @@ language = "en"
 multilingual = false
 src = "src"
 title = "Lipl"
+
+[output.html]
+mathjax-support = true
+
+[output.epub]

@@ -1,4 +1,4 @@
 [workspace]
 resolver = "2"
-members = ["crates/build-book"]
+members = ["crates/build-book", "crates/build-epub"]
 

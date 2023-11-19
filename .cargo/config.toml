@@ -1,2 +1,3 @@
 [alias]
 build-book = "run --release --verbose --package build-book --"
+build-epub = "run --release --verbose --package build-epub --"
