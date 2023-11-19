@@ -1,2 +1,2 @@
 [alias]
-build-book = "run --release --package build-book --"
+build-book = "run --release --verbose --package build-book --"
