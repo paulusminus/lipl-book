@@ -10,4 +10,7 @@ Status is used to get the text for the statusbar that is shown on the bottom of 
 
 Control is used to select a theme, black letters on a white screen or white letters on a black screen, or to increase or decrease the fontsize.
 
-[The source code of Lipl Display](https://www.github.com/paulusminus/lipl-display-flutter) can be found on Github.
+Source code for the [`flutter`] and [`slint`] version is available on Github. I prefer using the slint version because you can run it on raspbian lite.
+
+[`flutter`]: https://www.github.com/paulusminus/lipl-display-flutter
+[`slint`]: https://www.github.com/paulusminus/lipl-display
