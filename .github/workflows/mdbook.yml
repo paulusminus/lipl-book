@@ -31,8 +31,6 @@ jobs:
       - uses: Swatinem/rust-cache@v2
       - name: Build html
         run: cargo build-book
-      - name: Build epub
-        run: cargo build-epub
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
