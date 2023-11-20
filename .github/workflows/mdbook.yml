@@ -28,8 +28,10 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v3
-      - name: Build html and epub
+      - name: Build html
         run: cargo build-book
+      - name: Build epub
+        run: cargo build-epub
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:

@@ -1,0 +1,8 @@
+[book]
+authors = ["Paul Min"]
+language = "en"
+multilingual = false
+src = "../src"
+title = "Lipl"
+
+[output.epub]

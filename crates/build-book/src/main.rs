@@ -1,3 +1,5 @@
+use std::path::PathBuf;
+
 use mdbook::MDBook;
 use mdbook::errors::Error;
 
@@ -12,6 +14,7 @@ fn cwd_to_workspace_root() -> std::io::Result<()> {
 
 fn main() -> Result<(), Error> {
     cwd_to_workspace_root()?;
-    let mdbook = MDBook::load(".")?;
+    let mut mdbook = MDBook::load("html")?;
+    mdbook.config.build.build_dir = PathBuf::from("../book");
     mdbook.build()
 }
