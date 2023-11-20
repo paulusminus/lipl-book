@@ -1,0 +1,23 @@
+name: Build epub
+
+on:
+  push:
+    tags:
+      - '*'
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+    - uses: actions/checkout@v4
+    - uses: Swatinem/rust-cache@v2
+    - name: Build epub
+      run: cargo build-epub
+    - uses: ncipollo/release-action@v1
+      with:
+        artifacts: "book/epub/*.epub"
