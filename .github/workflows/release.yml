@@ -1,0 +1,21 @@
+name: Deploy mdBook site to Pages
+
+on:
+  push:
+    tags: [ 'v*.*.*' ]
+
+
+jobs:
+  # Build job
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+        contents: write
+    steps:
+      - uses: actions/checkout@v3
+      - uses: Swatinem/rust-cache@v2
+      - name: Build html
+        run: cargo build-book
+      - uses: ncipollo/release-action@v1
+        with:
+          artifacts: "lipl-book.tar"

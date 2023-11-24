@@ -1,6 +1,6 @@
 use std::path::PathBuf;
 
-use log::{info, error};
+use log::{error, info};
 use mdbook::{errors::Error, renderer::RenderContext};
 
 /// Change to workspace root.
@@ -27,7 +27,10 @@ fn main() -> Result<(), Error> {
     let context = RenderContext::new(md.root, md.book, md.config, destination);
     match mdbook_epub::generate(&context) {
         Ok(_) => {
-            info!("Epub generated in directory {}", context.destination.display());
+            info!(
+                "Epub generated in directory {}",
+                context.destination.display()
+            );
         }
         Err(error) => {
             error!("Failed to generated epub {}", error);
@@ -45,7 +48,7 @@ fn main() -> Result<(), Error> {
     //             Err(error) => {
     //                 error!("Failed to generated epub {}", error);
     //             }
-    //         }        
+    //         }
     //     }
     //     Err(error) => {
     //         error!("Failed to get context from stdin {}", error);

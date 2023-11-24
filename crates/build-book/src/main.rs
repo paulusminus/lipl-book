@@ -1,8 +1,8 @@
 use std::fs::OpenOptions;
 use std::path::PathBuf;
 
-use mdbook::MDBook;
 use mdbook::errors::Error;
+use mdbook::MDBook;
 
 /// Change to workspace root.
 ///
@@ -19,7 +19,10 @@ fn main() -> Result<(), Error> {
     mdbook.config.build.build_dir = PathBuf::from("../book");
     mdbook.build()?;
 
-    let out_file = OpenOptions::new().create(true).write(true).open("book-html.tar")?;
+    let out_file = OpenOptions::new()
+        .create(true)
+        .write(true)
+        .open("lipl-book.tar")?;
     let mut builder = tar::Builder::new(out_file);
     builder.follow_symlinks(false);
 
