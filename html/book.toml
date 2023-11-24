@@ -6,4 +6,4 @@ src = "../src"
 title = "Lipl"
 
 [output.html]
-mathjax-support = true
+mathjax-support = false
